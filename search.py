@@ -44,11 +44,11 @@ def main():
                     if pattren==WORD:
                         result.write(''.join(line)+'\n')
             result.close()
-        filesize = os.path.getsize('result.txt')
-        if(filesize==0):
-            print(f"{WORD} not found!")
-        else:
-            print(f"file created in {os.path.abspath('result.txt')}")
+            filesize = os.path.getsize('result.txt')
+            if(filesize==0):
+                print(f"{WORD} not found!")
+            else:
+                print(f"file created in {os.path.abspath('result.txt')}")
         
 
 if __name__=="__main__":
