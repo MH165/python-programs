@@ -76,7 +76,7 @@ if __name__ == "__main__":
     
     target = pickTarget(args.network)
     target_ip = target[0]
-    target_mac = target[0]
+    target_mac = target[1]
     gateway_ip = conf.route.route("0.0.0.0")[2]
     gateway_mac = get_gateway_mac(gateway_ip, args.interface)
     attacker_mac = get_if_hwaddr(conf.iface)
